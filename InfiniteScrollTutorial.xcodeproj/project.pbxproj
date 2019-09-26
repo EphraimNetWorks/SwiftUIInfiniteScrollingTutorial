@@ -19,6 +19,7 @@
 		04238D8F233BCD9600F618B0 /* InfiniteScrollRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04238D8E233BCD9600F618B0 /* InfiniteScrollRepository.swift */; };
 		04238D91233BD2E800F618B0 /* ObservableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04238D90233BD2E800F618B0 /* ObservableArray.swift */; };
 		04238D93233BD5EE00F618B0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04238D92233BD5EE00F618B0 /* Data.swift */; };
+		04664890233CDE4400C9BA34 /* infinite_scroll_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0466488F233CDE4400C9BA34 /* infinite_scroll_gif.gif */; };
 		0AD4F24F8F30502C742C883E /* Pods_InfiniteScrollTutorialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58408639F724E5428CF97762 /* Pods_InfiniteScrollTutorialTests.framework */; };
 		7FCD016CE057E9D10E99C36B /* Pods_InfiniteScrollTutorialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B123980E4351942FB0C6BCFA /* Pods_InfiniteScrollTutorialUITests.framework */; };
 		F4C4B5E329DA655EFC4E3B29 /* Pods_InfiniteScrollTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86021A134818CD2369146AEB /* Pods_InfiniteScrollTutorial.framework */; };
@@ -60,6 +61,7 @@
 		04238D8E233BCD9600F618B0 /* InfiniteScrollRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollRepository.swift; sourceTree = "<group>"; };
 		04238D90233BD2E800F618B0 /* ObservableArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableArray.swift; sourceTree = "<group>"; };
 		04238D92233BD5EE00F618B0 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		0466488F233CDE4400C9BA34 /* infinite_scroll_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = infinite_scroll_gif.gif; sourceTree = "<group>"; };
 		3D43AC8886BFF0449840C8A7 /* Pods-InfiniteScrollTutorialUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollTutorialUITests.debug.xcconfig"; path = "Target Support Files/Pods-InfiniteScrollTutorialUITests/Pods-InfiniteScrollTutorialUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		43871D6B147534018C5F7289 /* Pods-InfiniteScrollTutorialUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollTutorialUITests.release.xcconfig"; path = "Target Support Files/Pods-InfiniteScrollTutorialUITests/Pods-InfiniteScrollTutorialUITests.release.xcconfig"; sourceTree = "<group>"; };
 		50CA000FF91B8C2350468F24 /* Pods-InfiniteScrollTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollTutorial.release.xcconfig"; path = "Target Support Files/Pods-InfiniteScrollTutorial/Pods-InfiniteScrollTutorial.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		04238D5B233BCCEB00F618B0 /* InfiniteScrollTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				0466488F233CDE4400C9BA34 /* infinite_scroll_gif.gif */,
 				04238D5C233BCCEB00F618B0 /* AppDelegate.swift */,
 				04238D5E233BCCEB00F618B0 /* SceneDelegate.swift */,
 				04238D60233BCCEB00F618B0 /* InfiniteScrollView.swift */,
@@ -298,6 +301,7 @@
 			files = (
 				04238D69233BCCF300F618B0 /* LaunchScreen.storyboard in Resources */,
 				04238D66233BCCF300F618B0 /* Preview Assets.xcassets in Resources */,
+				04664890233CDE4400C9BA34 /* infinite_scroll_gif.gif in Resources */,
 				04238D63233BCCF300F618B0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
