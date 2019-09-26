@@ -1,0 +1,6 @@
+framework module Pods_InfiniteScrollTutorialUITests {
+  umbrella header "Pods-InfiniteScrollTutorialUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

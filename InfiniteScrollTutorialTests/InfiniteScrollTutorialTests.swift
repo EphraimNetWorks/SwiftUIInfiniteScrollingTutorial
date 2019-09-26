@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import InfiniteScrollTutorial
+//@testable import InfiniteScrollTutorial
 
 class InfiniteScrollTutorialTests: XCTestCase {
 

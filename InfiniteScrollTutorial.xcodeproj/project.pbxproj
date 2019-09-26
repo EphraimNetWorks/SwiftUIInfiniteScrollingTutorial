@@ -3,18 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		04238D5D233BCCEB00F618B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04238D5C233BCCEB00F618B0 /* AppDelegate.swift */; };
 		04238D5F233BCCEB00F618B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04238D5E233BCCEB00F618B0 /* SceneDelegate.swift */; };
-		04238D61233BCCEB00F618B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04238D60233BCCEB00F618B0 /* ContentView.swift */; };
+		04238D61233BCCEB00F618B0 /* InfiniteScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04238D60233BCCEB00F618B0 /* InfiniteScrollView.swift */; };
 		04238D63233BCCF300F618B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04238D62233BCCF300F618B0 /* Assets.xcassets */; };
 		04238D66233BCCF300F618B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04238D65233BCCF300F618B0 /* Preview Assets.xcassets */; };
 		04238D69233BCCF300F618B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04238D67233BCCF300F618B0 /* LaunchScreen.storyboard */; };
 		04238D74233BCCF300F618B0 /* InfiniteScrollTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04238D73233BCCF300F618B0 /* InfiniteScrollTutorialTests.swift */; };
 		04238D7F233BCCF400F618B0 /* InfiniteScrollTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04238D7E233BCCF400F618B0 /* InfiniteScrollTutorialUITests.swift */; };
+		04238D8D233BCD0F00F618B0 /* InfiniteScrollViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04238D8C233BCD0F00F618B0 /* InfiniteScrollViewModel.swift */; };
+		04238D8F233BCD9600F618B0 /* InfiniteScrollRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04238D8E233BCD9600F618B0 /* InfiniteScrollRepository.swift */; };
+		04238D91233BD2E800F618B0 /* ObservableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04238D90233BD2E800F618B0 /* ObservableArray.swift */; };
+		04238D93233BD5EE00F618B0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04238D92233BD5EE00F618B0 /* Data.swift */; };
+		0AD4F24F8F30502C742C883E /* Pods_InfiniteScrollTutorialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58408639F724E5428CF97762 /* Pods_InfiniteScrollTutorialTests.framework */; };
+		7FCD016CE057E9D10E99C36B /* Pods_InfiniteScrollTutorialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B123980E4351942FB0C6BCFA /* Pods_InfiniteScrollTutorialUITests.framework */; };
+		F4C4B5E329DA655EFC4E3B29 /* Pods_InfiniteScrollTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86021A134818CD2369146AEB /* Pods_InfiniteScrollTutorial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +45,7 @@
 		04238D59233BCCEB00F618B0 /* InfiniteScrollTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScrollTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04238D5C233BCCEB00F618B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04238D5E233BCCEB00F618B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04238D60233BCCEB00F618B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04238D60233BCCEB00F618B0 /* InfiniteScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollView.swift; sourceTree = "<group>"; };
 		04238D62233BCCF300F618B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04238D65233BCCF300F618B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04238D68233BCCF300F618B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +56,19 @@
 		04238D7A233BCCF400F618B0 /* InfiniteScrollTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfiniteScrollTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04238D7E233BCCF400F618B0 /* InfiniteScrollTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollTutorialUITests.swift; sourceTree = "<group>"; };
 		04238D80233BCCF400F618B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04238D8C233BCD0F00F618B0 /* InfiniteScrollViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollViewModel.swift; sourceTree = "<group>"; };
+		04238D8E233BCD9600F618B0 /* InfiniteScrollRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollRepository.swift; sourceTree = "<group>"; };
+		04238D90233BD2E800F618B0 /* ObservableArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableArray.swift; sourceTree = "<group>"; };
+		04238D92233BD5EE00F618B0 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		3D43AC8886BFF0449840C8A7 /* Pods-InfiniteScrollTutorialUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollTutorialUITests.debug.xcconfig"; path = "Target Support Files/Pods-InfiniteScrollTutorialUITests/Pods-InfiniteScrollTutorialUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		43871D6B147534018C5F7289 /* Pods-InfiniteScrollTutorialUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollTutorialUITests.release.xcconfig"; path = "Target Support Files/Pods-InfiniteScrollTutorialUITests/Pods-InfiniteScrollTutorialUITests.release.xcconfig"; sourceTree = "<group>"; };
+		50CA000FF91B8C2350468F24 /* Pods-InfiniteScrollTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollTutorial.release.xcconfig"; path = "Target Support Files/Pods-InfiniteScrollTutorial/Pods-InfiniteScrollTutorial.release.xcconfig"; sourceTree = "<group>"; };
+		58408639F724E5428CF97762 /* Pods_InfiniteScrollTutorialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfiniteScrollTutorialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73247115A604EA577C86DD3A /* Pods-InfiniteScrollTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollTutorial.debug.xcconfig"; path = "Target Support Files/Pods-InfiniteScrollTutorial/Pods-InfiniteScrollTutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		81D39D86F79F6F26907F65CA /* Pods-InfiniteScrollTutorialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollTutorialTests.release.xcconfig"; path = "Target Support Files/Pods-InfiniteScrollTutorialTests/Pods-InfiniteScrollTutorialTests.release.xcconfig"; sourceTree = "<group>"; };
+		86021A134818CD2369146AEB /* Pods_InfiniteScrollTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfiniteScrollTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9691D26A94C1E809E537E92D /* Pods-InfiniteScrollTutorialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteScrollTutorialTests.debug.xcconfig"; path = "Target Support Files/Pods-InfiniteScrollTutorialTests/Pods-InfiniteScrollTutorialTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B123980E4351942FB0C6BCFA /* Pods_InfiniteScrollTutorialUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfiniteScrollTutorialUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C4B5E329DA655EFC4E3B29 /* Pods_InfiniteScrollTutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD4F24F8F30502C742C883E /* Pods_InfiniteScrollTutorialTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FCD016CE057E9D10E99C36B /* Pods_InfiniteScrollTutorialUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +106,8 @@
 				04238D72233BCCF300F618B0 /* InfiniteScrollTutorialTests */,
 				04238D7D233BCCF400F618B0 /* InfiniteScrollTutorialUITests */,
 				04238D5A233BCCEB00F618B0 /* Products */,
+				C996F437736242103669BED1 /* Pods */,
+				9C62C225647F0F57037FFAFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +126,15 @@
 			children = (
 				04238D5C233BCCEB00F618B0 /* AppDelegate.swift */,
 				04238D5E233BCCEB00F618B0 /* SceneDelegate.swift */,
-				04238D60233BCCEB00F618B0 /* ContentView.swift */,
+				04238D60233BCCEB00F618B0 /* InfiniteScrollView.swift */,
 				04238D62233BCCF300F618B0 /* Assets.xcassets */,
 				04238D67233BCCF300F618B0 /* LaunchScreen.storyboard */,
 				04238D6A233BCCF300F618B0 /* Info.plist */,
 				04238D64233BCCF300F618B0 /* Preview Content */,
+				04238D8C233BCD0F00F618B0 /* InfiniteScrollViewModel.swift */,
+				04238D8E233BCD9600F618B0 /* InfiniteScrollRepository.swift */,
+				04238D90233BD2E800F618B0 /* ObservableArray.swift */,
+				04238D92233BD5EE00F618B0 /* Data.swift */,
 			);
 			path = InfiniteScrollTutorial;
 			sourceTree = "<group>";
@@ -136,6 +165,29 @@
 			path = InfiniteScrollTutorialUITests;
 			sourceTree = "<group>";
 		};
+		9C62C225647F0F57037FFAFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86021A134818CD2369146AEB /* Pods_InfiniteScrollTutorial.framework */,
+				58408639F724E5428CF97762 /* Pods_InfiniteScrollTutorialTests.framework */,
+				B123980E4351942FB0C6BCFA /* Pods_InfiniteScrollTutorialUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C996F437736242103669BED1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73247115A604EA577C86DD3A /* Pods-InfiniteScrollTutorial.debug.xcconfig */,
+				50CA000FF91B8C2350468F24 /* Pods-InfiniteScrollTutorial.release.xcconfig */,
+				9691D26A94C1E809E537E92D /* Pods-InfiniteScrollTutorialTests.debug.xcconfig */,
+				81D39D86F79F6F26907F65CA /* Pods-InfiniteScrollTutorialTests.release.xcconfig */,
+				3D43AC8886BFF0449840C8A7 /* Pods-InfiniteScrollTutorialUITests.debug.xcconfig */,
+				43871D6B147534018C5F7289 /* Pods-InfiniteScrollTutorialUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04238D83233BCCF400F618B0 /* Build configuration list for PBXNativeTarget "InfiniteScrollTutorial" */;
 			buildPhases = (
+				6A2977BF8A68DF1C91AEFB14 /* [CP] Check Pods Manifest.lock */,
 				04238D55233BCCEB00F618B0 /* Sources */,
 				04238D56233BCCEB00F618B0 /* Frameworks */,
 				04238D57233BCCEB00F618B0 /* Resources */,
+				28258BEFA76403F2294446E3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +214,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04238D86233BCCF400F618B0 /* Build configuration list for PBXNativeTarget "InfiniteScrollTutorialTests" */;
 			buildPhases = (
+				CD9822B4202F5D0F8A2B380B /* [CP] Check Pods Manifest.lock */,
 				04238D6B233BCCF300F618B0 /* Sources */,
 				04238D6C233BCCF300F618B0 /* Frameworks */,
 				04238D6D233BCCF300F618B0 /* Resources */,
@@ -178,6 +233,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04238D89233BCCF400F618B0 /* Build configuration list for PBXNativeTarget "InfiniteScrollTutorialUITests" */;
 			buildPhases = (
+				DEB73BD2B8845D74D0CD5269 /* [CP] Check Pods Manifest.lock */,
 				04238D76233BCCF400F618B0 /* Sources */,
 				04238D77233BCCF400F618B0 /* Frameworks */,
 				04238D78233BCCF400F618B0 /* Resources */,
@@ -262,14 +318,104 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28258BEFA76403F2294446E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InfiniteScrollTutorial/Pods-InfiniteScrollTutorial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InfiniteScrollTutorial/Pods-InfiniteScrollTutorial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InfiniteScrollTutorial/Pods-InfiniteScrollTutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A2977BF8A68DF1C91AEFB14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InfiniteScrollTutorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD9822B4202F5D0F8A2B380B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InfiniteScrollTutorialTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEB73BD2B8845D74D0CD5269 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InfiniteScrollTutorialUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04238D55233BCCEB00F618B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04238D93233BD5EE00F618B0 /* Data.swift in Sources */,
+				04238D91233BD2E800F618B0 /* ObservableArray.swift in Sources */,
 				04238D5D233BCCEB00F618B0 /* AppDelegate.swift in Sources */,
+				04238D8D233BCD0F00F618B0 /* InfiniteScrollViewModel.swift in Sources */,
+				04238D8F233BCD9600F618B0 /* InfiniteScrollRepository.swift in Sources */,
 				04238D5F233BCCEB00F618B0 /* SceneDelegate.swift in Sources */,
-				04238D61233BCCEB00F618B0 /* ContentView.swift in Sources */,
+				04238D61233BCCEB00F618B0 /* InfiniteScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +578,7 @@
 		};
 		04238D84233BCCF400F618B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73247115A604EA577C86DD3A /* Pods-InfiniteScrollTutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +598,7 @@
 		};
 		04238D85233BCCF400F618B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50CA000FF91B8C2350468F24 /* Pods-InfiniteScrollTutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +618,7 @@
 		};
 		04238D87233BCCF400F618B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9691D26A94C1E809E537E92D /* Pods-InfiniteScrollTutorialTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +640,7 @@
 		};
 		04238D88233BCCF400F618B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81D39D86F79F6F26907F65CA /* Pods-InfiniteScrollTutorialTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +662,7 @@
 		};
 		04238D8A233BCCF400F618B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D43AC8886BFF0449840C8A7 /* Pods-InfiniteScrollTutorialUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +682,7 @@
 		};
 		04238D8B233BCCF400F618B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43871D6B147534018C5F7289 /* Pods-InfiniteScrollTutorialUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
