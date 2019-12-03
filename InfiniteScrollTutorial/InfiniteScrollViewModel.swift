@@ -15,19 +15,20 @@ class InfiniteScrollViewModel {
   var infiniteScrollView: InfiniteScrollView? = nil
   let disposeBag = DisposeBag()
 
-  init (infiniteScrollRepo : InfiniteScrollRepository){
+  init (infiniteScrollRepo : InfiniteScrollRepository = InfiniteScrollRepository()){
 
     self.infiniteScrollRepo = infiniteScrollRepo
 
     // subscribe and start listening for changes in our data
-    self.infiniteScrollRepo.listObservable.subscribe({ newList in
+    self.infiniteScrollRepo.listObservable.subscribe({ [weak self] newList in
 
       // update list in our View class whenever list changes
-      self.updateListItems(list: newList.element)
+      self?.updateListItems(list: newList.element)
                                                       
     }).disposed(by: disposeBag)
 
   }
+    
 
   func getNewItems(currentListSize: Int){
 

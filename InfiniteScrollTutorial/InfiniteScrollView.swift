@@ -14,7 +14,7 @@ struct InfiniteScrollView: View {
   @ObservedObject var myList = ObservableArray<Data>(array: [Data(value: "Infinite Scroll", id: 0)])
 
   //initialize ViewModel class which we will use to requests for data
-  let viewModel = InfiniteScrollViewModel(infiniteScrollRepo: InfiniteScrollRepository())
+  let viewModel = InfiniteScrollViewModel()
   
   var body: some View {
   
