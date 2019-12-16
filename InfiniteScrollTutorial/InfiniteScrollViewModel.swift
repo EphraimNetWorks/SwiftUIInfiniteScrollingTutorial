@@ -12,7 +12,7 @@ import RxSwift
 class InfiniteScrollViewModel {
 
   let infiniteScrollRepo : InfiniteScrollRepository
-  var infiniteScrollView: InfiniteScrollView? = nil
+  var viewUpdate: ViewUpdateProtocol? = nil
   let disposeBag = DisposeBag()
 
   init (infiniteScrollRepo : InfiniteScrollRepository = InfiniteScrollRepository()){
@@ -23,7 +23,7 @@ class InfiniteScrollViewModel {
     self.infiniteScrollRepo.listObservable.subscribe({ [weak self] newList in
 
       // update list in our View class whenever list changes
-      self?.updateListItems(list: newList.element)
+      self?.updateListItems(newList: newList.element)
                                                       
     }).disposed(by: disposeBag)
 
@@ -37,11 +37,15 @@ class InfiniteScrollViewModel {
 
   }
   
-  func updateListItems(list: [Data]?){
-    if list != nil && !list!.isEmpty{
+  func updateListItems(newList: [Data]?){
+    if newList != nil && !newList!.isEmpty{
       // append new lists to the bottom of the list we already have
-      infiniteScrollView?.myList.array.append(contentsOf: list!)
+        self.viewUpdate?.appendData(list: newList)
     }
   }
   
+}
+
+protocol ViewUpdateProtocol{
+    func appendData(list: [Data]?)
 }
