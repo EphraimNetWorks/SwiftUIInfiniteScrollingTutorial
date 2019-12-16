@@ -19,25 +19,25 @@ struct InfiniteScrollView: View {
   var body: some View {
     
     self.viewModel.viewUpdate = self
-    
-    return List(self.myList.array.enumerated().map({ $0 }), id: \.1.self.id) { (index,listItem) in
-    // set data value into a Text View
-    Text(listItem.value).onAppear(perform: {
-    
-        let count = self.myList.array.count
-
-        /*
-        *Whenever a view appears we check if the view appearing is the last
-        *view and get more items if it is the last view.
-        *In real cases you might need to increase the offset (which is in this case 1)
-        *to accommodate the delay while trying to reach the *server for more data
-        */
-        if index == count-1 {
-          // request for more data since last row has being reached
-          self.viewModel.getNewItems(currentListSize: count)
-        }
+    let enumeratedList = self.myList.array.enumerated().map({ $0 })
+    return List (enumeratedList, id: \.1.self.id) { (index,listItem) in
+        // set data value into a Text View
+        Text(listItem.value).onAppear(perform: {
         
-      })
+            let count = self.myList.array.count
+
+            /*
+            *Whenever a view appears we check if the view appearing is the last
+            *view and get more items if it is the last view.
+            *In real cases you might need to increase the offset (which is in this case 1)
+            *to accommodate the delay while trying to reach the *server for more data
+            */
+            if index == count-1 {
+              // request for more data since last row has being reached
+              self.viewModel.getNewItems(currentListSize: count)
+            }
+            
+          })
     }
   }
 }
