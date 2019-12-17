@@ -9,25 +9,36 @@
 import Foundation
 import RxSwift
 
-class InfiniteScrollRepository {
-  
-  // this is an observable which holds our data
-  let listObservable = BehaviorSubject<[Data]>(value: [])
-  
+protocol InfiniteScrollRepoProtocol{
+    
+    func getDataArray() -> BehaviorSubject<[Data]>
+    func fetchListItems(currentListSize: Int)
+    
+}
 
-  func fetchListItems(currentListSize: Int){
-    var dummyList : [Data] = []
-    let limit = 20
+class InfiniteScrollRepository : InfiniteScrollRepoProtocol{
+  
+    // this is an observable which holds our data
+    private let listObservable = BehaviorSubject<[Data]>(value: [])
     
-    // we calculate the next page's number with the size of the list we currently have
-    let page = currentListSize/limit + 1
-    
-    // create an array of dummy data
-    for index in 1...limit {
-    dummyList.append(Data(value: "Page \(page) -> Item \(index)", id: index+currentListSize))
+    func getDataArray() -> BehaviorSubject<[Data]>{
+        return listObservable
     }
-    // update observable with new data
-    listObservable.onNext(dummyList)
-  }
+
+        
+    func fetchListItems(currentListSize: Int){
+        var dummyList : [Data] = []
+        let limit = 20
+        
+        // we calculate the next page's number with the size of the list we currently have
+        let page = currentListSize/limit + 1
+        
+        // create an array of dummy data
+        for index in 1...limit {
+        dummyList.append(Data(value: "Page \(page) -> Item \(index)", id: index+currentListSize))
+        }
+        // update observable with new data
+        listObservable.onNext(dummyList)
+    }
   
 }

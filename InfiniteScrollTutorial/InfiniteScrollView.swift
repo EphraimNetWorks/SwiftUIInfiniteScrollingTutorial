@@ -53,6 +53,10 @@ extension InfiniteScrollView: ViewUpdateProtocol{
 
 }
 
+protocol ViewUpdateProtocol{
+    func appendData(list: [Data]?)
+}
+
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     InfiniteScrollView()
