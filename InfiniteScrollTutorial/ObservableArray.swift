@@ -20,8 +20,8 @@ class ObservableArray<T>: ObservableObject {
         
     }
     
-    func observeChildrenChanges<K>(_ type:K.Type) throws ->ObservableArray<T> where K : ObservableObject{
-        let array2 = array as! [K]
+    func observeChildrenChanges<T: ObservableObject>() -> ObservableArray<T> {
+        let array2 = array as! [T]
         array2.forEach({
             let c = $0.objectWillChange.sink(receiveValue: { _ in self.objectWillChange.send() })
 
@@ -29,6 +29,6 @@ class ObservableArray<T>: ObservableObject {
             // otherwise the sink subscription gets cancelled
             self.cancellables.append(c)
         })
-        return self
+        return self as! ObservableArray<T>
     }
 }
